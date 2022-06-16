@@ -1,3 +1,5 @@
+https://docs.microsoft.com/zh-cn/azure/aks/tutorial-kubernetes-prepare-app
+
 * yml 檔
 ```
 一開始會描敘 apiVersion
