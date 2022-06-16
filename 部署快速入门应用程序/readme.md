@@ -1,6 +1,35 @@
 https://docs.microsoft.com/zh-cn/azure/aks/tutorial-kubernetes-prepare-app
 
-* yml 檔
+* 目錄結構
+```
+azure-voting-app-redis
+│   azure-vote-all-in-one-redis.yaml
+│   docker-compose.yaml
+│   LICENSE
+│   README.md
+│
+├───azure-vote
+│   │   app_init.supervisord.conf
+│   │   Dockerfile
+│   │   Dockerfile-for-app-service
+│   │   sshd_config
+│   │
+│   └───azure-vote
+│       │   config_file.cfg
+│       │   main.py
+│       │
+│       ├───static
+│       │       default.css
+│       │
+│       └───templates
+│               index.html
+│
+└───jenkins-tutorial
+        config-jenkins.sh
+        deploy-jenkins-vm.sh
+```
+
+* yml 檔說明
 ```
 一開始會描敘 apiVersion
 ex:
