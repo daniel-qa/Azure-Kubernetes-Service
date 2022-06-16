@@ -64,3 +64,18 @@ kind: Service
                 
 ```                
 
+* Service 則是負責容器的對外通訊(也就是負責網路)
+
+```
+- apiVersion: v1
+  kind: Service
+  metadata:
+    name: azure-vote-back
+    namespace: azure-vote-1655370967663
+  spec:
+    ports:
+      - port: 6379
+    selector:
+      app: azure-vote-back
+
+```
