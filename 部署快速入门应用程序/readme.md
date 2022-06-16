@@ -1,6 +1,6 @@
-
+* yml 檔
 ```
-* yml 檔，一開始會描敘 apiVersion
+一開始會描敘 apiVersion
 ex:
   - apiVersion: v1
 
