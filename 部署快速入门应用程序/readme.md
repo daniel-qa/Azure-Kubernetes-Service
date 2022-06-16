@@ -26,6 +26,8 @@ kind: Service
       - kubernetes
 ```
 * Deployment 會定義容器，硬體資源，Port 等等
+
+```
 - apiVersion: apps/v1
   kind: Deployment
   metadata:
@@ -59,5 +61,6 @@ kind: Service
             ports:
               - containerPort: 6379
                 name: redis
+                
 ```                
 
