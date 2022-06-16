@@ -25,7 +25,7 @@ kind: Service
     finalizers:
       - kubernetes
 ```
-* Deployment 會定義容器，名稱，硬體資源，Port 等等
+* Deployment 會定義容器，名稱，硬體資源，Port... 等等
 
 ```
 - apiVersion: apps/v1
