@@ -1,4 +1,4 @@
-## 在 AKS 上部署 WordPress.md
+## 在 AKS 上部署 WordPress
 https://docs.microsoft.com/zh-tw/azure/mysql/flexible-server/tutorial-deploy-wordpress-on-aks
 
 * 連線至叢集
