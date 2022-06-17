@@ -22,3 +22,10 @@ FROM mcr.microsoft.com/hello-world
 ```
 
 * 執行 az acr build 命令來建置映射，並在成功建置映像後，將其推送至您的登錄。 
+
+```
+az acr build --image sample/hello-world:v1 \
+  --registry myregistryRD  \
+  --file Dockerfile . 
+  
+```
