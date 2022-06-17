@@ -7,9 +7,10 @@ https://docs.microsoft.com/zh-tw/azure/container-registry/container-registry-qui
 az acr create --resource-group myResourceGroup \
   --name myContainerRegistry008 --sku Basic
 
-p.s 注意，Registryj登入 的名稱必須是唯一，不能有人使用
+p.s 注意，Registry 登入 的名稱必須是唯一，不能有人使用
 
-要先登入 Registry
+要先登入容器注册表
+
 ```
 az acr login --name myregistryRD 
 ```
