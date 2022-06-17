@@ -5,4 +5,4 @@ https://docs.microsoft.com/zh-tw/azure/mysql/flexible-server/tutorial-deploy-wor
 ```
 az aks get-credentials --resource-group wordpress-project --name myAKSCluster
 
-``
+```
