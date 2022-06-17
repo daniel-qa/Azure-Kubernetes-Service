@@ -11,12 +11,14 @@ p.s 注意，Registry 的名稱必須是唯一，不能有人使用
 
 
 
-* 從 Dockerfile 建置和推送映像
+## 從 Dockerfile 建置和推送映像
 
-以下單一行建立名為 Dockerfile 的 Dockerfile：FROM mcr.microsoft.com/hello-world。
+* 建立只有行的 Dockerfile
 
 Dockerfile
 ```
-FROM mcr.microsoft.com/hello-world。
+FROM mcr.microsoft.com/hello-world
 
 ```
+
+* 執行 az acr build 命令來建置映射，並在成功建置映像後，將其推送至您的登錄。 
