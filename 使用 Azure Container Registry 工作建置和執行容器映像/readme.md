@@ -7,7 +7,7 @@ https://docs.microsoft.com/zh-tw/azure/container-registry/container-registry-qui
 az acr create --resource-group myResourceGroup \
   --name myContainerRegistry008 --sku Basic
 
-p.s 注意，Registry 的名稱必須是唯一，不能有人使用
+p.s 注意，Registryj登入 的名稱必須是唯一，不能有人使用
 
 要先登入 Registry
 ```
@@ -21,6 +21,8 @@ https://docs.microsoft.com/en-US/cli/azure/acr#az_acr_build
 要推送映像到 Azure Container Registry，必須先有映像。 
 先拉一個 Azure 的鏡像下來
 在此範例中 hello-world ，從Microsoft Container Registry提取映射。
+
+docker tag mcr.microsoft.com/hello-world <login-server>/hello-world:v1
 
 ```
 docker pull mcr.microsoft.com/hello-world
