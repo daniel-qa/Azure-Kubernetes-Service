@@ -6,3 +6,9 @@ https://docs.microsoft.com/zh-tw/azure/container-registry/container-registry-qui
 試試看
 az acr create --resource-group myResourceGroup \
   --name myContainerRegistry008 --sku Basic
+
+p.s 注意，Registry 的名稱必須是唯一，不能有人使用
+
+
+
+* 從 Dockerfile 建置和推送映像
