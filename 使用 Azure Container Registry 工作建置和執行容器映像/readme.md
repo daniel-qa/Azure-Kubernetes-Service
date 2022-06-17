@@ -16,6 +16,8 @@ az acr login --name myregistryRD
 
 ## 從 Dockerfile 建置和推送映像
 
+https://docs.microsoft.com/en-US/cli/azure/acr#az_acr_build
+
 * 建立只有行的 Dockerfile
 
 Dockerfile
