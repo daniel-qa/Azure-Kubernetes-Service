@@ -22,8 +22,6 @@ https://docs.microsoft.com/en-US/cli/azure/acr#az_acr_build
 先拉一個 Azure 的鏡像下來
 在此範例中 hello-world ，從Microsoft Container Registry提取映射。
 
-docker tag mcr.microsoft.com/hello-world <login-server>/hello-world:v1
-
 ```
 docker pull mcr.microsoft.com/hello-world
 ```
@@ -32,6 +30,9 @@ docker pull mcr.microsoft.com/hello-world
 例如 mycontainerregistry.azurecr.io。
 
 使用 docker tag 命令來標記映像。 將 <login-server> 取代為 ACR 執行個體的登入伺服器名稱。
+
+docker tag mcr.microsoft.com/hello-world <login-server>/hello-world:v1
+  
 ```
 docker tag mcr.microsoft.com/hello-world mycontainerregistry.azurecr.io/hello-world:v1
 ```
