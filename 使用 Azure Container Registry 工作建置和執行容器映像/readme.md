@@ -40,7 +40,10 @@ docker tag mcr.microsoft.com/hello-world myregistryrd.azurecr.io/hello-world:v1
 使用 docker push 將映像推送到登錄執行個體
 ```
 docker push myregistryrd.azurecr.io/hello-world:v1  
-  
+```  
+docker rmi 只會刪除本地映象，並不會從 Azure 容器登錄中的 hello-world 存放區移除映像。
+```
+docker rmi myregistryrd.azurecr.io/hello-world:v1
 ```  
   
 * 建立只有行的 Dockerfile
