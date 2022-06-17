@@ -45,6 +45,11 @@ docker rmi 只會刪除本地映象，並不會從 Azure 容器登錄中的 hell
 ```
 docker rmi myregistryrd.azurecr.io/hello-world:v1
 ```  
+
+* 列出登錄中的存放庫
+```  
+ az acr repository list --name myregistryrd.azurecr.io --output table  
+```  
   
 * 建立只有行的 Dockerfile
 
