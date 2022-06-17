@@ -18,6 +18,14 @@ az acr login --name myregistryRD
 
 https://docs.microsoft.com/en-US/cli/azure/acr#az_acr_build
 
+要推送映像到 Azure Container Registry，必須先有映像。 
+先拉一個 Azure 的鏡像下來
+在此範例中 hello-world ，從Microsoft Container Registry提取映射。
+
+```
+docker pull mcr.microsoft.com/hello-world
+```
+
 * 建立只有行的 Dockerfile
 
 Dockerfile
