@@ -9,7 +9,10 @@ az acr create --resource-group myResourceGroup \
 
 p.s 注意，Registry 的名稱必須是唯一，不能有人使用
 
-
+要先登入 Registry
+```
+az acr login --name myregistryRD 
+```
 
 ## 從 Dockerfile 建置和推送映像
 
