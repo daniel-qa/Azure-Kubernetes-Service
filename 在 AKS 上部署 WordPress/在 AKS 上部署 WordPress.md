@@ -6,3 +6,7 @@ https://docs.microsoft.com/zh-tw/azure/mysql/flexible-server/tutorial-deploy-wor
 az aks get-credentials --resource-group CoreServiceRG-Test --name MyCluster
 
 ```
+* 驗證
+```
+kubectl get nodes
+```
