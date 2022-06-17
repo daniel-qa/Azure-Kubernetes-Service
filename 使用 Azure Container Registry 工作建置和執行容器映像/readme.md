@@ -25,6 +25,12 @@ https://docs.microsoft.com/en-US/cli/azure/acr#az_acr_build
 ```
 docker pull mcr.microsoft.com/hello-world
 ```
+您必須使用登錄登入伺服器的完整名稱來標記映像，才能將映像推送至您的登錄。 
+登入伺服器名稱的格式< 為 registry-name.azurecr.io > (必須是小寫) ，
+例如 mycontainerregistry.azurecr.io。
+
+使用 docker tag 命令來標記映像。 將 <login-server> 取代為 ACR 執行個體的登入伺服器名稱。
+
 
 * 建立只有行的 Dockerfile
 
