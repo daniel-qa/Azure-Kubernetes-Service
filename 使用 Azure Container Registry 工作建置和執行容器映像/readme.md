@@ -72,5 +72,5 @@ az acr run --registry myregistryrd \
   --cmd '$Registry/sample/hello-world:v1' /dev/null  
   
 ```  
-  
+windows 的斷行符號是 \r  
   
