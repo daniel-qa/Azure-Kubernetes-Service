@@ -36,6 +36,12 @@ docker pull mcr.microsoft.com/hello-world
 docker tag mcr.microsoft.com/hello-world <login-server>/hello-world:v1
 docker tag mcr.microsoft.com/hello-world myregistryrd.azurecr.io/hello-world:v1
 ```
+
+使用 docker push 將映像推送到登錄執行個體
+```
+docker push myregistryrd.azurecr.io/hello-world:v1  
+  
+```  
   
 * 建立只有行的 Dockerfile
 
