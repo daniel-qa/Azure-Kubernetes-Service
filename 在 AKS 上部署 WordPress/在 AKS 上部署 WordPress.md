@@ -3,6 +3,6 @@ https://docs.microsoft.com/zh-tw/azure/mysql/flexible-server/tutorial-deploy-wor
 
 * 連線至叢集
 ```
-az aks get-credentials --resource-group wordpress-project --name myAKSCluster
+az aks get-credentials --resource-group CoreServiceRG-Test --name MyCluster
 
 ```
