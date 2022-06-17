@@ -66,7 +66,7 @@ az acr build -t sample/hello-world:v1 -r myregistryrd .
   
 ```
   
-* 執行映像
+## 執行映像
 ```
 az acr run --registry myregistryrd \
   --cmd '$Registry/sample/hello-world:v1' /dev/null  
