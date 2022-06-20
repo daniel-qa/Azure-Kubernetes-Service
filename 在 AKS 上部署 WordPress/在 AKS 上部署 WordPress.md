@@ -95,3 +95,8 @@ RUN docker-php-ext-enable mysqli
 ```
 docker build --tag myblog:latest .
 ```
+* 將您的映像部署至 Docker Hub 或 Azure Container Registry。
+如果您使用 Azure Container Regdistry (ACR)，請執行 az aks update 命令，以連結 ACR 帳戶與 AKS 叢集。
+```
+az aks update -n myAKSCluster -g wordpress-project --attach-acr <your-acr-name>
+```
