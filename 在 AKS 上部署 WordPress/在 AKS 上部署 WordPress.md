@@ -10,3 +10,10 @@ az aks get-credentials --resource-group CoreServiceRG-Test --name MyCluster
 ```
 kubectl get nodes
 ```
+
+* 先建一個 az mysql flexible-server 
+
+```
+az mysql flexible-server create --public-access all
+
+```
