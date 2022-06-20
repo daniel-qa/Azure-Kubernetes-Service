@@ -30,3 +30,7 @@ COPY public/ /var/www/html/
 RUN docker-php-ext-install mysqli
 RUN docker-php-ext-enable mysqli
 ```
+* 建置您的 Docker 映像
+```
+docker build --tag myblog:latest .
+```
