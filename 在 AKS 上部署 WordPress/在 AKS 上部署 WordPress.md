@@ -23,3 +23,10 @@ az mysql flexible-server create --public-access all
 my-wordpress-app
 
 ```
+* 建立 Dockerfile
+```
+FROM php:7.2-apache
+COPY public/ /var/www/html/
+RUN docker-php-ext-install mysqli
+RUN docker-php-ext-enable mysqli
+```
