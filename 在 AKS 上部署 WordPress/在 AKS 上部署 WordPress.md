@@ -17,3 +17,9 @@ kubectl get nodes
 az mysql flexible-server create --public-access all
 
 ```
+
+* 建立專案目錄
+```
+my-wordpress-app
+
+```
