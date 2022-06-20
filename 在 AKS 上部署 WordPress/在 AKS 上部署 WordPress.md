@@ -46,6 +46,7 @@ my-wordpress-app
     └─── Dockerfile
 ```
 ** 行重新命名 wp-config-sample.php 為 wp-config.php 
+
 ** 並將行從 開頭 // ** MySQL settings - You can get this info from your web host ** // 取代為 ，直到行 define( 'DB_COLLATE', '' ); 以下列程式碼片段取代。 下列程式碼是從 Kubernetes 資訊清單檔案讀取資料庫主機 、使用者名稱和密碼。
 
 ```
