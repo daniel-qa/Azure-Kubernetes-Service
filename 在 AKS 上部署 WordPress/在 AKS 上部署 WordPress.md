@@ -19,6 +19,10 @@ az mysql flexible-server create --public-access all
 ```
 
 * 建立專案目錄
+
+ 下載最新的 WordPress 
+ https://wordpress.org/download/
+ 
 ```
 my-wordpress-app
 
