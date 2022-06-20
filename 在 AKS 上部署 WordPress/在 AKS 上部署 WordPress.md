@@ -45,6 +45,7 @@ my-wordpress-app
         . . . . . . .
     └─── Dockerfile
 ```
+** 行重新命名 wp-config-sample.php 為 wp-config.php 
 
 * 建立 Dockerfile
 ```
