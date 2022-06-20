@@ -23,6 +23,24 @@ az mysql flexible-server create --public-access all
 my-wordpress-app
 
 ```
+* 建立下列資料夾結構
+```
+└───my-wordpress-app
+    └───public
+        ├───wp-admin
+        │   ├───css
+      	. . . . . . .
+        ├───wp-content
+        │   ├───plugins
+        . . . . . . .
+        └───wp-includes
+        . . . . . . .
+        ├───wp-config-sample.php
+        ├───index.php
+        . . . . . . .
+    └─── Dockerfile
+```
+
 * 建立 Dockerfile
 ```
 FROM php:7.2-apache
