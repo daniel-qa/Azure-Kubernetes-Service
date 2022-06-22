@@ -155,6 +155,7 @@ php-svc  LoadBalancer   10.0.37.27   52.179.23.131   80:30572/TCP   2m
 <img src="https://docs.microsoft.com/zh-tw/azure/mysql/flexible-server/media/tutorial-deploy-wordpress-on-aks/wordpress-aks-installed-success.png">
 
 * 清除資源
+若要避免 Azure 費用，您應該清除不需要的資源。 若不再需要叢集，可使用 az group delete 命令來移除資源群組、容器服務和所有相關資源。
 ``` 
 az group delete --name wordpress-project --yes --no-wait 
 ```
