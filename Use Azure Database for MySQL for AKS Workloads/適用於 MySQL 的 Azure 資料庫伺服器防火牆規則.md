@@ -24,7 +24,15 @@ mysql -hmydbrd.mysql.database.azure.com -udbadmin@mydbrd -p
 ![](https://docs.microsoft.com/zh-tw/azure/mysql/single-server/media/concepts-firewall-rules/1-firewall-concept.png)
 
 
-* 允許外部使用者
+* 從 Internet 連接
 ```
-允許 Azure 連線，可以允許 Azure 服務去存取 MySQL db，但無法允許外部使用者連線。
+服務器級防火牆規則適用於 Azure Database for MySQL 服務器上的所有數據庫。
+
+如果請求的 IP 地址在服務器級防火牆規則中指定的範圍之一內，則授予連接。
+
+如果請求的 IP 地址超出任何數據庫級或服務器級防火牆規則中指定的範圍，則連接請求將失敗。
+```
+
+```
+必須符合以上規則，才能由 Internet 連接成功
 ```
