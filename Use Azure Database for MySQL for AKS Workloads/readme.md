@@ -1,3 +1,0 @@
-# Use Azure Database for MySQL for AKS Workloads
-
-
