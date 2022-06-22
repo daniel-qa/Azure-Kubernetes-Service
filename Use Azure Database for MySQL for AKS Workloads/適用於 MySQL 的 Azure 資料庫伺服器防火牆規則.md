@@ -41,10 +41,12 @@ mysql -hmydbrd.mysql.database.azure.com -udbadmin@mydbrd -p
 * 排除防火牆問題
 
 ```
-動態 IP 地址：如果您使用動態 IP 尋址進行 Internet 連接並且無法通過防火牆，您可以嘗試以下解決方案之一：
+動態 IP 地址：
 
-向 Internet 服務提供商 (ISP) 詢問分配給訪問 Azure Database for MySQL 服務器的客戶端計算機的 IP 地址範圍，然後將該 IP 地址範圍添加為防火牆規則。
+如果您使用動態 IP 尋址進行 Internet 連接並且無法通過防火牆，您可以嘗試以下解決方案之一：
 
-為您的客戶端計算機獲取靜態 IP 地址，然後將 IP 地址添加為防火牆規則。
+1.向 Internet 服務提供商 (ISP) 詢問分配給訪問 Azure Database for MySQL 服務器的客戶端計算機的 IP 地址範圍，然後將該 IP 地址範圍添加為防火牆規則。
+
+2.為您的客戶端計算機獲取靜態 IP 地址，然後將 IP 地址添加為防火牆規則。
 
 ```
