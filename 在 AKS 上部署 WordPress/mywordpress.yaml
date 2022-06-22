@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: wordpress-blog
-        image: myregistryRD/[YOUR-IMAGE-NAME]:[TAG]
+        image: myregistryRD/wordpress-blog:latest
         ports:
         - containerPort: 80
         env:
