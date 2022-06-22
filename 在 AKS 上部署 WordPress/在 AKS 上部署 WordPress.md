@@ -107,7 +107,7 @@ docker push myregistryrd.azurecr.io/wordpress-blog:latest
 ```
 * P.S 要先 login acr ，才能 push
 ```
-az acr login --name myregistryrd.azurecr.io
+az acr Login --name myregistryrd.azurecr.io
 ```
 
 ## 建立 Kubernetes 資訊清單檔
