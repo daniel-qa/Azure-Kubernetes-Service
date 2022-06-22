@@ -1,4 +1,4 @@
-# ACR :Azure Container Registry
+# ACR : Azure Container Registry
 https://docs.microsoft.com/zh-tw/azure/container-registry/container-registry-quickstart-task-cli
 
 建立容器登錄庫
