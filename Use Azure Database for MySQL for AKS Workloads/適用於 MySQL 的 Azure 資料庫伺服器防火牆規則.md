@@ -49,4 +49,6 @@ mysql -hmydbrd.mysql.database.azure.com -udbadmin@mydbrd -p
 
 2.為您的客戶端計算機獲取靜態 IP 地址，然後將 IP 地址添加為防火牆規則。
 
+3.增加 0.0.0.0 - 255.255.255.255 的防火牆規則，允許 anywhere connect
+
 ```
