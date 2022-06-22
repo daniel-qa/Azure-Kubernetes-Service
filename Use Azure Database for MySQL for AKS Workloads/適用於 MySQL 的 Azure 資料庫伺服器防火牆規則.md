@@ -14,7 +14,7 @@ https://docs.microsoft.com/zh-tw/azure/mysql/single-server/concepts-firewall-rul
 
 
 * 防火牆概觀
-```
+
 ![](https://docs.microsoft.com/zh-tw/azure/mysql/single-server/media/concepts-firewall-rules/1-firewall-concept.png)
-```
+
 
