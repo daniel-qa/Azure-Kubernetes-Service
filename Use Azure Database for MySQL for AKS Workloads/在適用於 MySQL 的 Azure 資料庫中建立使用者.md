@@ -16,7 +16,7 @@ GRANT ALL PRIVILEGES ON testdb . * TO 'db_user'@'%';
 FLUSH PRIVILEGES;
 ```
 
-驗證使用者權限
+* 驗證使用者權限
 
 ```
 USE testdb;
