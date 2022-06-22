@@ -131,3 +131,8 @@ az acr repository list -n myregistryrd
 ```
 kubectl apply -f mywordpress.yaml
 ```
+輸出
+```
+deployment "wordpress-blog" created
+service "php-svc" created
+```
