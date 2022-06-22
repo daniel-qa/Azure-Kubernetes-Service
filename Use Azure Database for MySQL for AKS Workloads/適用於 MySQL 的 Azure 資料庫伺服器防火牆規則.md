@@ -41,7 +41,7 @@ mysql -hmydbrd.mysql.database.azure.com -udbadmin@mydbrd -p
 * 排除防火牆問題
 
 ```
-動態 IP 地址：
+* 動態 IP 地址：
 
 如果您使用動態 IP 尋址進行 Internet 連接並且無法通過防火牆，您可以嘗試以下解決方案之一：
 
