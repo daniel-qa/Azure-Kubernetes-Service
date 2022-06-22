@@ -122,4 +122,7 @@ az acr repository list -n myregistryrd
 
 2.使用 MySQL 彈性伺服器的 SERVERNAME、YOUR-DATABASE-USERNAME、YOUR-DATABASE-PASSWORD 更新以下 env 區段。
 ```
-
+* 使用 kubectl apply 命令來部署應用程式並指定 YAML 資訊清單的名稱：
+```
+kubectl apply -f mywordpress.yaml
+```
