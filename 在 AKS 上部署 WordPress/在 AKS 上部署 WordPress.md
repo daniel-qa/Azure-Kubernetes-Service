@@ -154,3 +154,7 @@ php-svc  LoadBalancer   10.0.37.27   52.179.23.131   80:30572/TCP   2m
 開啟網頁瀏覽器並瀏覽至服務的外部 IP 位址，以查看您的 WordPress 安裝頁面。 
 <img src="https://docs.microsoft.com/zh-tw/azure/mysql/flexible-server/media/tutorial-deploy-wordpress-on-aks/wordpress-aks-installed-success.png">
 
+* 清除資源
+``` 
+az group delete --name wordpress-project --yes --no-wait 
+```
