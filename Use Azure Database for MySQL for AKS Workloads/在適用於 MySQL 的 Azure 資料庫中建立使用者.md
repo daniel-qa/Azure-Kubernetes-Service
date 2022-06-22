@@ -29,7 +29,14 @@ SHOW GRANTS FOR 'db_user'@'%';
 
 ```
 單一伺服器	mysql --host mydemoserver.mysql.database.azure.com --database testdb --user db_user@mydemoserver -p
+
+mysql --host mydbrd.mysql.database.azure.com --database learncenter --user daniel@mydbrd -p
+
+
 彈性伺服器	mysql --host mydemoserver.mysql.database.azure.com --database testdb --user db_user -p
+
+
+
 ```
 * 限制使用者的權限
 ```
