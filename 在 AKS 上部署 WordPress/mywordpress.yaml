@@ -19,13 +19,13 @@ spec:
         - containerPort: 80
         env:
         - name: DATABASE_HOST
-          value: "SERVERNAME.mysql.database.azure.com" #Update here
+          value: "mydbrd.mysql.database.azure.com" #Update here
         - name: DATABASE_USERNAME
-          value: "YOUR-DATABASE-USERNAME"  #Update here
+          value: "daniel"  #Update here
         - name: DATABASE_PASSWORD
-          value: "YOUR-DATABASE-PASSWORD"  #Update here
+          value: "Ha80650390"  #Update here
         - name: DATABASE_NAME
-          value: "flexibleserverdb"
+          value: "wpdb"
       affinity:
         podAntiAffinity:
           requiredDuringSchedulingIgnoredDuringExecution:
