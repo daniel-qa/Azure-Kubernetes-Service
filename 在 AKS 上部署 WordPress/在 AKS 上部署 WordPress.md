@@ -143,6 +143,6 @@ kubectl get service php-svc --watch
 輸出
 ```
 NAME               TYPE           CLUSTER-IP   EXTERNAL-IP   PORT(S)        AGE
-php-svc  LoadBalancer   10.0.37.27   <pending>     80:30572/TCP   6s
+php-svc            LoadBalancer   10.0.37.27   <pending>     80:30572/TCP   6s
 ```
 
