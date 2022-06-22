@@ -116,7 +116,6 @@ az acr repository list -n myregistryrd
 ## 建立 Kubernetes 資訊清單檔
 * Kubernetes 資訊清單檔會定義所需的叢集狀態，例如要執行哪些容器映像。 建立名為 mywordpress.yaml 的資訊清單檔，然後將下列 YAML 定義複製進來。
 ```
-參考: mywordpress.yaml
 
 [ 重要 ] 
 1.將 [DOCKER-HUB-USER/ACR ACCOUNT]/[YOUR-IMAGE-NAME]:[TAG] 取代為實際的 WordPress Docker 映像名稱和標籤，
@@ -125,6 +124,9 @@ az acr repository list -n myregistryrd
 2.使用 MySQL 彈性伺服器的 SERVERNAME、YOUR-DATABASE-USERNAME、YOUR-DATABASE-PASSWORD 更新以下 env 區段。
 ```
 * 使用 kubectl apply 命令來部署應用程式並指定 YAML 資訊清單的名稱：
+
+* 參考: mywordpress.yaml
+
 ```
 kubectl apply -f mywordpress.yaml
 ```
