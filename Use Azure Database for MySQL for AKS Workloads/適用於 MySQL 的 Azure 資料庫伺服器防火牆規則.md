@@ -26,13 +26,13 @@ mysql -hmydbrd.mysql.database.azure.com -udbadmin@mydbrd -p
 
 * 從 Internet 連接
 ```
-服務器級防火牆規則適用於 Azure Database for MySQL 服務器上的所有數據庫。
+1.服務器級防火牆規則適用於 Azure Database for MySQL 服務器上的所有數據庫。
 
-如果請求的 IP 地址在服務器級防火牆規則中指定的範圍之一內，則授予連接。
+2.如果請求的 IP 地址在服務器級防火牆規則中指定的範圍之一內，則授予連接。
 
-如果請求的 IP 地址超出任何數據庫級或服務器級防火牆規則中指定的範圍，則連接請求將失敗。
+3.如果請求的 IP 地址超出任何數據庫級或服務器級防火牆規則中指定的範圍，則連接請求將失敗。
 ```
 
 ```
-必須符合以上規則，才能由 Internet 連接成功
+必須符合以上1或2規則，才能由 Internet 連接成功
 ```
