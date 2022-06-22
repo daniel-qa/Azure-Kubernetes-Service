@@ -32,6 +32,8 @@ SHOW GRANTS FOR 'db_user'@'%';
 
 mysql --host mydbrd.mysql.database.azure.com --database learncenter --user daniel@mydbrd -p
 
+* ERROR 9000 (HY000): Client with IP address '125.227.46.72' is not allowed to connect to this MySQL server.
+
 
 彈性伺服器	mysql --host mydemoserver.mysql.database.azure.com --database testdb --user db_user -p
 
