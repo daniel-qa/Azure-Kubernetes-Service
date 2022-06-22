@@ -160,3 +160,12 @@ php-svc  LoadBalancer   10.0.37.27   52.179.23.131   80:30572/TCP   2m
 ``` 
 az group delete --name wordpress-project --yes --no-wait 
 ```
+
+* 常用 Kubectl 指令
+```
+kubetl apply -f pod.yaml
+kubectl create -f pod.yaml
+kubectl get pod
+kubectl describe pod web-app
+kubectl delete pod web-app
+```
