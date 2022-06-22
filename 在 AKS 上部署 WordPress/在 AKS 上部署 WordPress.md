@@ -170,5 +170,9 @@ kubectl describe pod web-app
 kubectl delete pod web-app
 
 kubectl delete deployment wordpress-blog     # 要刪掉整個 Deployment，再重建
+kubectl delete service  php-svc
+
+kubectl get service php-svc
+
 
 ```
