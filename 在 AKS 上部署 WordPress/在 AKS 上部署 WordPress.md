@@ -109,7 +109,10 @@ docker push myregistryrd.azurecr.io/wordpress-blog:latest
 ```
 az acr Login --name myregistryrd.azurecr.io
 ```
-
+* 查詢 
+```
+az acr repository list -n myregistryrd
+```
 ## 建立 Kubernetes 資訊清單檔
 * Kubernetes 資訊清單檔會定義所需的叢集狀態，例如要執行哪些容器映像。 建立名為 mywordpress.yaml 的資訊清單檔，然後將下列 YAML 定義複製進來。
 ```
