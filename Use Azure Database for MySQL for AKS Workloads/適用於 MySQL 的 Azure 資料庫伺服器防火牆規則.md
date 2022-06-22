@@ -12,6 +12,9 @@ https://docs.microsoft.com/zh-tw/azure/mysql/single-server/concepts-firewall-rul
 
 ![](https://docs.microsoft.com/zh-tw/azure/mysql/single-server/media/quickstart-create-mysql-server-database-using-azure-portal/add-current-ip-firewall.png)
 
-# Use Azure Database for MySQL for AKS Workloads
+
+* 防火牆概觀
+![](https://docs.microsoft.com/zh-tw/azure/mysql/single-server/media/concepts-firewall-rules/1-firewall-concept.png)
+
 
 
