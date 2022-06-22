@@ -127,6 +127,7 @@ az acr repository list -n myregistryrd
 
 * 參考: mywordpress.yaml
 
+* 將 WordPress 部署至 AKS 叢集
 ```
 kubectl apply -f mywordpress.yaml
 ```
