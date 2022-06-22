@@ -136,3 +136,8 @@ kubectl apply -f mywordpress.yaml
 > deployment "wordpress-blog" created
 > service "php-svc" created
 ```
+* 測試應用程式
+```
+kubectl get service php-svc --watch
+```
+
