@@ -13,6 +13,8 @@ CREATE USER 'db_user'@'%' IDENTIFIED BY 'StrongPassword!';
 
 GRANT ALL PRIVILEGES ON testdb . * TO 'db_user'@'%';
 
+GRANT ALL PRIVILEGES ON *.* TO 'daniel'@'%';
+
 FLUSH PRIVILEGES;
 ```
 
