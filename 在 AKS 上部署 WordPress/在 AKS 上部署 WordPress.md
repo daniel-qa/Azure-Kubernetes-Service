@@ -145,4 +145,8 @@ kubectl get service php-svc --watch
 NAME       TYPE           CLUSTER-IP   EXTERNAL-IP   PORT(S)        AGE
 php-svc    LoadBalancer   10.0.37.27   <pending>     80:30572/TCP   6s
 ```
-
+* 當 EXTERNAL-IP 位址從 pending 變成實際的公用 IP 位址時，請使用 CTRL-C 停止 kubectl 監看式流程。 下列範例輸出會顯示已指派給服務的有效公用 IP 位址：
+輸出
+```
+php-svc  LoadBalancer   10.0.37.27   52.179.23.131   80:30572/TCP   2m
+```
