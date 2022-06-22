@@ -23,3 +23,10 @@ USE testdb;
 
 SHOW GRANTS FOR 'db_user'@'%';
 ```
+* 使用新的使用者連線至資料庫
+
+```
+單一伺服器	mysql --host mydemoserver.mysql.database.azure.com --database testdb --user db_user@mydemoserver -p
+彈性伺服器	mysql --host mydemoserver.mysql.database.azure.com --database testdb --user db_user -p
+
+```
