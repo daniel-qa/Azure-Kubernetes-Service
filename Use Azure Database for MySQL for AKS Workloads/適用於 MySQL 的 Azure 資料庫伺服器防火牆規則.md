@@ -24,3 +24,7 @@ mysql -hmydbrd.mysql.database.azure.com -udbadmin@mydbrd -p
 ![](https://docs.microsoft.com/zh-tw/azure/mysql/single-server/media/concepts-firewall-rules/1-firewall-concept.png)
 
 
+* 允許外部使用者
+```
+允許 Azure 連線，可以允許 Azure 服務去存取 MySQL db，但無法允許外部使用者連線。
+```
