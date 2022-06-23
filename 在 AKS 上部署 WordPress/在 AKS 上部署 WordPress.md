@@ -174,5 +174,17 @@ kubectl delete service  php-svc
 
 kubectl get service php-svc
 
+```
+* replace更新替换资源
+```
+replace命令用于对已有资源进行更新、替换。
+当我们需要更新resource的一些属性的时候，如果修改副本数量，增加、修改label，更改image版本，修改端口等。
+都可以直接修改原yaml文件，然后执行replace命令。
+注：名字不能被更更新。另外，如果是更新label，原有标签的pod将会与更新label后的rc断开联系，
+有新label的rc将会创建指定副本数的新的pod，但是默认并不会删除原来的pod。
+所以此时如果使用get po将会发现pod数翻倍，进一步check会发现原来的pod已经不会被新rc控制，
+此处只介绍命令不详谈此问题，好奇者可自行实验。
 
+kubectl replace -f rc-nginx.yaml
+ 
 ```
