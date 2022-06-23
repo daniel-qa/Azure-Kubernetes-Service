@@ -188,3 +188,11 @@ replace命令用于对已有资源进行更新、替换。
 kubectl replace -f rc-nginx.yaml
  
 ```
+
+* Delete
+```
+根据resource名或label删除resource。
+
+kubectl delete -f rc-nginx.yaml
+
+```
