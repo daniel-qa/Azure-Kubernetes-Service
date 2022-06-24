@@ -1,8 +1,49 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: db
-  
-  containers:
-  - name: mysql
-    image: docker.io/library/mysql:5.7
+  name: mydb
+spec:  
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mydb
+  template:
+    metadata:
+      labels:
+        app: mydb
+    spec:
+      containers:
+      - name: mydb
+        image: docker.io/library/mysql:5.7
+        ports:
+        - containerPort: 3306
+        env:
+        - name: DATABASE_HOST
+          value: "mydbrd.mysql.database.azure.com" #Update here
+        - name: DATABASE_USERNAME
+          value: "daniel"  #Update here
+        - name: DATABASE_PASSWORD
+          value: "Ha80650390"  #Update here
+        - name: DATABASE_NAME
+          value: "wpdb"
+      affinity:
+        podAntiAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            - labelSelector:
+                matchExpressions:
+                  - key: "app"
+                    operator: In
+                    values:
+                    - mydb
+              topologyKey: "kubernetes.io/hostname"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: db-svc
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 80
+  selector:
+    app: wordpress-blog              
