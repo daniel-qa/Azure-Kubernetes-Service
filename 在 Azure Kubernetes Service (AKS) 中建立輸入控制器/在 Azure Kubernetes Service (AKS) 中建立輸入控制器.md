@@ -6,5 +6,6 @@ https://docs.microsoft.com/zh-tw/azure/aks/ingress-basic?tabs=azure-cli
 另一個是由 NGINX， Inc. 維護， (nginxinc/kubernetes-ingress) 。
 
 本文將使用 Kubernetes 社群輸入控制器。
+https://github.com/kubernetes/ingress-nginx
 
 ```
