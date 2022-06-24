@@ -14,12 +14,14 @@ Helm管理名为chart的Kubernetes包的工具。Helm可以做以下的事情：
 管理与Helm一起安装的chart的发布周期
 
  * 对于Helm，有三个重要的概念：
-
+```
 chart 创建Kubernetes应用程序所必需的一组信息。
 config 包含了可以合并到打包的chart中的配置信息，用于创建一个可发布的对象。
 release 是一个与特定配置相结合的chart的运行实例。
+```
 
 * 组件
+``` 
 Helm是一个可执行文件，执行时分成两个不同的部分：
 
 Helm客户端 是终端用户的命令行客户端。负责以下内容：
@@ -36,3 +38,4 @@ Helm库 提供执行所有Helm操作的逻辑。与Kubernetes API服务交互并
 将chart安装到Kubernetes中，并提供后续发布对象
 与Kubernetes交互升级和卸载chart
 独立的Helm库封装了Helm逻辑以便不同的客户端可以使用它。
+```
