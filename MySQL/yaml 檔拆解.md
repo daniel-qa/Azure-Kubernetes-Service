@@ -27,3 +27,16 @@ selector:
   app: azure-vote-back
   
 ```  
+* contains 細部設定
+```
+containers:
+  - name: azure-vote-front
+    image: mcr.microsoft.com/azuredocs/azure-vote-front:v1
+    ports:
+    - containerPort: 80
+    resources:
+      requests:
+        cpu: 250m
+      limits:
+        cpu: 500m
+```
