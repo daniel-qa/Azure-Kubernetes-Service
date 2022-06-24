@@ -7,6 +7,12 @@ containers:
   image: mcr.microsoft.com/azuredocs/azure-vote-front:v1
 ```
 
+
+* 部署應用程式
+```
+kubectl apply -f azure-vote-all-in-one-redis.yaml
+```
+
 * Service 
 
 ```
