@@ -1,0 +1,8 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: db
+  
+  containers:
+  - name: mysql
+    image: docker.io/library/mysql:5.7
