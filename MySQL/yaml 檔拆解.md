@@ -1,3 +1,11 @@
+* 定義 Contains 
+name, image
+```
+containers:
+- name: azure-vote-front
+  image: mcr.microsoft.com/azuredocs/azure-vote-front:v1
+```
+
 * Service 
 
 ```
