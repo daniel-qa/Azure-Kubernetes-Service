@@ -27,5 +27,3 @@ selector:
   app: azure-vote-back
   
 ```  
-
-多一個 namespace 
