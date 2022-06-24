@@ -39,3 +39,11 @@ Helm库 提供执行所有Helm操作的逻辑。与Kubernetes API服务交互并
 与Kubernetes交互升级和卸载chart
 独立的Helm库封装了Helm逻辑以便不同的客户端可以使用它。
 ```
+* 执行
+``` 
+Helm客户端和库是使用Go编程语言编写的
+
+这个库使用Kubernetes客户端库与Kubernetes通信。现在，这个库使用REST+JSON。它将信息存储在Kubernetes的密钥中。 不需要自己的数据库。
+
+如果可能，配置文件是用YAML编写的。
+```
