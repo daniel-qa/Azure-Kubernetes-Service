@@ -13,7 +13,7 @@ containers:
 kubectl apply -f azure-vote-all-in-one-redis.yaml
 ```
 
-* Service 
+* 設定 Service 
 
 ```
 kind: Service
