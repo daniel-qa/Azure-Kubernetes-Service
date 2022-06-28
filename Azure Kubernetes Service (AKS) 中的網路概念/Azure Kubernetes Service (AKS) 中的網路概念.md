@@ -41,9 +41,8 @@ Azure 平臺也會簡化 AKS 叢集的虛擬網路。
 
 ### LoadBalancer
 ```
-建立 Azure 負載平衡器資源、設定外部 IP 位址，並將要求的 Pod 連線到負載平衡器後端集區。 若要允許客戶流量觸達應用程式，可在所需的連接埠上建立負載平衡規則。
-
-Diagram showing Load Balancer traffic flow in an AKS cluster
+建立 Azure 負載平衡器資源、設定外部 IP 位址，並將要求的 Pod 連線到負載平衡器後端集區。 
+若要允許客戶流量觸達應用程式，可在所需的連接埠上建立負載平衡規則。
 
 針對輸入流量的額外控制和路由，您可以改用 輸入控制器。
 ```
