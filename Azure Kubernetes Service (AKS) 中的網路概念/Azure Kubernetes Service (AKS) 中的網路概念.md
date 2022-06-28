@@ -22,7 +22,7 @@ Azure 平臺也會簡化 AKS 叢集的虛擬網路。
 
 ```
 
-##　服務
+## 服務
 
 * 為了簡化應用程式工作負載的網路設定，Kubernetes 會使用 服務 ，以邏輯方式將一組 Pod 分組在一起，並提供網路連線能力。 以下是可用的服務類型：
 
@@ -30,10 +30,9 @@ Azure 平臺也會簡化 AKS 叢集的虛擬網路。
 ### 叢集 IP
 ```
 建立內部 IP 位址，以在 AKS 叢集內使用。 這非常適用於支援叢集內其他工作負載的內部專用應用程式。
-
+```
 ![](https://docs.microsoft.com/zh-tw/azure/aks/media/concepts-network/aks-clusterip.png)
 
-```
 ### NodePort
 ```
 在基礎節點上建立埠對應，讓應用程式可以直接使用節點 IP 位址和埠來存取。
