@@ -47,6 +47,7 @@ Diagram showing Load Balancer traffic flow in an AKS cluster
 
 針對輸入流量的額外控制和路由，您可以改用 輸入控制器。
 ```
+![](https://docs.microsoft.com/zh-tw/azure/aks/media/concepts-network/aks-loadbalancer.png)
 
 ### ExternalName
 ```
