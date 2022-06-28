@@ -37,8 +37,9 @@ Azure 平臺也會簡化 AKS 叢集的虛擬網路。
 ```
 在基礎節點上建立埠對應，讓應用程式可以直接使用節點 IP 位址和埠來存取。
 
-Diagram showing NodePort traffic flow in an AKS cluster
+
 ```
+![Diagram showing NodePort traffic flow in an AKS cluster](https://docs.microsoft.com/zh-tw/azure/aks/media/concepts-network/aks-nodeport.png)
 
 ### LoadBalancer
 ```
