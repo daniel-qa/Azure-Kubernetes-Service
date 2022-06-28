@@ -31,7 +31,8 @@ Azure 平臺也會簡化 AKS 叢集的虛擬網路。
 ```
 建立內部 IP 位址，以在 AKS 叢集內使用。 這非常適用於支援叢集內其他工作負載的內部專用應用程式。
 
-Diagram showing Cluster IP traffic flow in an AKS cluster
+![Diagram showing Cluster IP traffic flow in an AKS cluster](https://docs.microsoft.com/zh-tw/azure/aks/media/concepts-network/aks-clusterip.png)
+
 ```
 ### NodePort
 ```
