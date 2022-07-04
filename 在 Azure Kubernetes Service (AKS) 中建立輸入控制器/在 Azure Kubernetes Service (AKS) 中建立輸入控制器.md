@@ -1,27 +1,11 @@
-https://docs.microsoft.com/zh-tw/azure/aks/ingress-basic?tabs=azure-cli
 
-* 注意
-```
-以 Nginx 為基礎的 Kubernetes 有兩個開放原始碼輸入控制器：一個是由 Kubernetes 社群維護 (kubernetes/ingress-nginx) ，
-另一個是由 NGINX， Inc. 維護， (nginxinc/kubernetes-ingress) 。
+https://github.com/MicrosoftDocs/azure-docs.zh-tw/blob/master/articles/aks/ingress-basic.md
 
-本文將使用 Kubernetes 社群輸入控制器。
-https://github.com/kubernetes/ingress-nginx
+#　在 Azure Kubernetes Service (AKS) 中建立輸入控制器
 
-```
-
-*基本設定
-
-若要建立基本 NGINX 輸入控制器而不自訂預設值，您將使用 Helm。
-
-```
-NAMESPACE=ingress-basic
-
-helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
-helm repo update
-
-helm install ingress-nginx ingress-nginx/ingress-nginx \
-  --create-namespace \
-  --namespace $NAMESPACE \
-  --set controller.service.annotations."service\.beta\.kubernetes\.io/azure-load-balancer-health-probe-request-path"=/healthz
-  ```
+｀｀｀
+　輸入控制器是一項可為 Kubernetes 服務提供反向 Proxy、可設定的流量路由和 TLS 終止的軟體。 
+　Kubernetes 輸入資源可用來設定個別 Kubernetes 服務的輸入規則和路由。 
+　透過輸入控制器和輸入規則，您可以使用單一 IP 位址將流量路由至 Kubernetes 叢集中的多個服務。
+ 
+ ｀｀｀
