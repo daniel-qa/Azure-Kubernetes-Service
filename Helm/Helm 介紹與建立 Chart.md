@@ -85,5 +85,11 @@ replicaCount: 2
        paths: [/]
 ```
 
+把參數提取出來後，我們就來依樣畫葫蘆地把 template 中其他三個 yaml 檔寫成可以接受參數的方式：
 
+deployment.yaml
+
+```
+
+```
 
