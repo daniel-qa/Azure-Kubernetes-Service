@@ -50,7 +50,13 @@ https://github.com/helm/charts/tree/master/stable/wordpress
 
 * values.yaml
 
-定義這個 Chart 的所有參數，這些參數都會被代入在 templates 中的元件。例如我們會在這邊定義 nodePorts 給 service.yaml 、定義 replicaCount 給 deployment.yaml、定義 hosts 給 ingress.yaml 等等
-從上面的檔案結構可以看到，我們透過編輯 values.yaml，就可以對所有的 yaml 設定檔做到版本控制與管理。並透過 install / delete 的方式一鍵部署 / 刪除。
+定義這個 Chart 的所有參數，這些參數都會被代入在 templates 中的元件。
+例如我們會在這邊定義 nodePorts 給 service.yaml 、
+定義 replicaCount 給 deployment.yaml、
+定義 hosts 給 ingress.yaml 等等
+
+從上面的檔案結構可以看到，我們透過編輯 values.yaml，就可以對所有的 yaml 設定檔做到版本控制與管理。
+並透過 install / delete 的方式一鍵部署 / 刪除。
+
 
 ```
