@@ -33,3 +33,21 @@ https://github.com/helm/charts/tree/master/stable/wordpress
 └── values.yaml
 
 ```
+#### 檔案定義
+
+```
+Chart.yaml
+
+定義了這個 Chart 的 Metadata，包括 Chart 的版本、名稱、敘述等
+charts
+
+在這個資料夾裡可以放其他的 Chart，這裡稱作 SubCharts
+templates
+
+定義這個 Chart 服務需要的 Kubernetes 元件。但我們並不會把各元件的參數寫死在裡面，而是會用參數的方式代入
+values.yaml
+
+定義這個 Chart 的所有參數，這些參數都會被代入在 templates 中的元件。例如我們會在這邊定義 nodePorts 給 service.yaml 、定義 replicaCount 給 deployment.yaml、定義 hosts 給 ingress.yaml 等等
+從上面的檔案結構可以看到，我們透過編輯 values.yaml，就可以對所有的 yaml 設定檔做到版本控制與管理。並透過 install / delete 的方式一鍵部署 / 刪除。
+
+```
