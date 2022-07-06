@@ -15,3 +15,21 @@ https://cwhu.medium.com/kubernetes-helm-chart-tutorial-fbdad62a8b61
 helm create helm-demo
 
 ```
+### wordpress 範例
+可以看檔案目錄結構，及 yml 內容
+```
+https://github.com/helm/charts/tree/master/stable/wordpress
+
+
+接下來我們來看看 ./helm-demo 的資料夾
+
+.
+├── Chart.yaml
+├── charts
+├── templates
+│   ├── deployment.yaml
+│   ├── ingress.yaml
+│   └── service.yaml
+└── values.yaml
+
+```
