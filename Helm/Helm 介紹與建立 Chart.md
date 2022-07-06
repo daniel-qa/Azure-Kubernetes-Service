@@ -8,3 +8,10 @@ https://cwhu.medium.com/kubernetes-helm-chart-tutorial-fbdad62a8b61
 然後透過給參數的方式，去同時管理與設定這些 yaml 檔案。
 
 ```
+
+## 建立自己的  chart
+
+```
+helm create helm-demo
+
+```
