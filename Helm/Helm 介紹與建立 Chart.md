@@ -60,5 +60,30 @@ https://github.com/helm/charts/tree/master/stable/wordpress
 就可以對所有的 yaml 設定檔做到版本控制與管理。
 並透過 install / delete 的方式一鍵部署 / 刪除。
 
-
 ```
+
+## 小試身手
+
+* 把上述 yaml 檔中可以作為參數的部分抽取出來，在這邊為了降低複雜度，我們只簡單挑幾個參數出來，然後我們就可以把這些參數寫到 values.yaml 中。
+
+values.yaml
+```
+replicaCount: 2
+ ​
+ image:
+   repository: hcwxd/blue-whale
+ ​
+ service:
+   type: NodePort
+   port: 80
+ ​
+ ingress:
+   enabled: true
+ ​
+   hosts:
+     - host: blue.demo.com
+       paths: [/]
+```
+
+
+
