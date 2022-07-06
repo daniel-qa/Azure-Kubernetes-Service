@@ -55,7 +55,9 @@ https://github.com/helm/charts/tree/master/stable/wordpress
 定義 replicaCount 給 deployment.yaml、
 定義 hosts 給 ingress.yaml 等等
 
-從上面的檔案結構可以看到，我們透過編輯 values.yaml，就可以對所有的 yaml 設定檔做到版本控制與管理。
+從上面的檔案結構可以看到，
+我們透過編輯 values.yaml，
+就可以對所有的 yaml 設定檔做到版本控制與管理。
 並透過 install / delete 的方式一鍵部署 / 刪除。
 
 
