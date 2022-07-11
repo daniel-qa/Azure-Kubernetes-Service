@@ -3,7 +3,14 @@ https://docs.microsoft.com/zh-cn/azure/aks/cluster-container-registry-integratio
 # 使用 Azure 容器注册表从 Azure Kubernetes 服务进行身份验证
 
 
+## 为现有的 AKS 群集配置 ACR 集成
+```
+az aks update -n myAKSCluster -g myResourceGroup --attach-acr <acr-name>
+az aks update -n MyCluster -g CoreServiceRG-Test --attach-acr myRegistryRD
 
+* 确保你具有正确的 AKS 凭据
+az aks get-credentials -g CoreServiceRG-Test -n MyCluster
+```
 
 * 使用 ACR 和 AKS 
  将映像导入 ACR
