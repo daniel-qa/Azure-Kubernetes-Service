@@ -11,4 +11,9 @@ https://docs.microsoft.com/zh-cn/azure/aks/cluster-container-registry-integratio
 
 ```
 az acr import  -n <acr-name> --source docker.io/library/nginx:latest --image nginx:v1
+
+az acr import  -n myRegistryRD --source docker.io/library/nginx:latest --image nginx:v1
+
 ```
+
+
