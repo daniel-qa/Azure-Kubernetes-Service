@@ -17,3 +17,8 @@ az acr import  -n myRegistryRD --source docker.io/library/nginx:latest --image n
 ```
 
 
+* 确保你具有正确的 AKS 凭据
+
+```
+az aks get-credentials -g CoreServiceRG-Test -n myRegistryRD
+```
