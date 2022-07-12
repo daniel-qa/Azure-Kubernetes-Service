@@ -20,4 +20,10 @@ spec:
   selector:
     app: public-app
  ```   
-    
+
+* 部署
+* 
+```
+kubectl apply -f public-svc.yaml
+
+```
