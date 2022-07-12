@@ -29,3 +29,32 @@ az acr import  -n myRegistryRD --source docker.io/library/nginx:latest --image n
 ```
 az aks get-credentials -g CoreServiceRG-Test -n myRegistryRD
 ```
+
+* 将示例映像从 ACR 部署到 AKS
+
+acr-nginx.yaml 
+
+```
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx0-deployment
+  labels:
+    app: nginx0-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: nginx0
+  template:
+    metadata:
+      labels:
+        app: nginx0
+    spec:
+      containers:
+      - name: nginx
+        image: <acr-name>.azurecr.io/nginx:v1
+        ports:
+        - containerPort: 80
+
+```
