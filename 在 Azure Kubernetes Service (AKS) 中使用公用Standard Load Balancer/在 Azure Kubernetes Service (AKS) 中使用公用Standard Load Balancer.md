@@ -31,3 +31,19 @@ kubectl get service public-svc
 
 ```
 
+
+* deployment 綁定 service 範例
+```
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: azure-vote-front
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+  selector:
+    app: azure-vote-front
+    
+```
