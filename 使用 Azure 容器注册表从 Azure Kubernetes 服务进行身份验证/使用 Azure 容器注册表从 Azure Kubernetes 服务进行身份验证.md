@@ -53,7 +53,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: <acr-name>.azurecr.io/nginx:v1
+        image: myregistryrd.azurecr.io/nginx:v1
         ports:
         - containerPort: 80
 
