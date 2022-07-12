@@ -22,8 +22,12 @@ spec:
  ```   
 
 * 部署
-* 
+
 ```
 kubectl apply -f public-svc.yaml
 
+*檢查
+kubectl get service public-svc
+
 ```
+
