@@ -52,7 +52,7 @@ docker rmi myregistryrd.azurecr.io/hello-world:v1
  az acr repository list --name myregistryrd.azurecr.io --output table  
 ```  
   
-* 建立只有行的 Dockerfile
+* 建立只有一行的 Dockerfile
 
 Dockerfile
 ```
