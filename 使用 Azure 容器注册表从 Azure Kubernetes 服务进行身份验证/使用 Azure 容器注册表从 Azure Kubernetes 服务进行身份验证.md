@@ -58,3 +58,12 @@ spec:
         - containerPort: 80
 
 ```
+* 在 AKS 群集中运行此部署
+
+```
+kubectl apply -f acr-nginx.yaml
+
+# 查看
+kubectl get pods
+```
+
