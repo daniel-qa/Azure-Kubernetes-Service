@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: phpmyadmin
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: phpmyadmin
+  template:
+    metadata:
+      labels:
+        app: phpmyadmin
+    spec:
+      containers:
+      - name: phpmyadmin
+        image: myclusterregistry.azurecr.io/phpmyadmin:5.0.2
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            cpu: 250m
+          limits:
+            cpu: 500m
+#        env:
+#        - name: DATABASE_HOST
+#          value: "mydbrd.mysql.database.azure.com" #Update here
+#        - name: DATABASE_USERNAME
+#          value: "daniel"  #Update here
+#        - name: DATABASE_PASSWORD
+#          value: "Ha80650390"  #Update here
+#        - name: DATABASE_NAME
+#          value: "wpdb"
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: phpmyadmin-svc
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 80
+  selector:
+    app: phpmyadmin
