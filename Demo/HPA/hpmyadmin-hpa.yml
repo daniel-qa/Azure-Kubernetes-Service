@@ -10,3 +10,4 @@ spec:
     kind: Deployment
     name: phpmyadmin
   targetCPUUtilizationPercentage: 50 # target CPU utilization
+  
