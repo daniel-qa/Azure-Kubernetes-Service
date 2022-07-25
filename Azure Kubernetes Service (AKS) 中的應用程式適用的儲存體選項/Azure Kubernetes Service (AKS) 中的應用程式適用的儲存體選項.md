@@ -115,3 +115,7 @@ StorageClass 也會定義 reclaimPolicy。
 當您刪除 Pod 和永續性磁片區不再需要時，reclaimPolicy 會控制基礎 Azure 儲存體資源的行為。 
 基礎儲存體資源可以刪除或保留，以便與未來的 Pod 搭配使用。
 ```
+
+
+
+* 除非指定永續性磁片區的 StorageClass，否則使用預設的 StorageClass。 
