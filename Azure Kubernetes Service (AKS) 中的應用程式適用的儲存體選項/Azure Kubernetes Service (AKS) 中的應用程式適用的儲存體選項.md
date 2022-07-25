@@ -96,3 +96,11 @@ Pod 通常會預期其儲存體能持續保存。
 ```
 
 ![](https://github.com/daniel-qa/Azure-Kubernetes-Service/blob/main/PIC/persistent-volumes.png?raw=true)
+
+
+```
+PersistentVolume 可由叢集管理員 靜態 建立，或由 Kubernetes API 伺服器 動態 建立。 
+如果 Pod 已排程並要求目前無法使用的儲存體，Kubernetes 可以建立基礎 Azure 磁片或檔案儲存體，並將其連結至 Pod。 
+
+動態佈建會使用 StorageClass 來識別需要建立的 Azure 儲存體類型。
+```
