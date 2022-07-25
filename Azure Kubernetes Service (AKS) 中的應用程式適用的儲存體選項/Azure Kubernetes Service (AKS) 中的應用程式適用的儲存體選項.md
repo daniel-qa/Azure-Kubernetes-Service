@@ -125,3 +125,19 @@ StorageClass 也會定義 reclaimPolicy。
 
 
 * 除非指定永續性磁片區的 StorageClass，否則使用預設的 StorageClass。 
+
+* 可以使用 kubectl 建立 StorageClass。
+* 下列範例會使用 進階版 受控磁碟，並指定刪除 Pod 時應保留基礎 Azure 磁片：
+
+```
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: managed-premium-retain
+provisioner: disk.csi.azure.com
+parameters:
+  skuName: Premium_LRS
+reclaimPolicy: Retain
+volumeBindingMode: WaitForFirstConsumer
+allowVolumeExpansion: true
+```
