@@ -33,6 +33,8 @@ Azure Blob
 
 生產與開發工作負載, 建議使用進階版 SSD。
 
-由於 Azure 磁片會掛接為 ReadWriteOnce，因此只能供單一 Pod 使用。 針對可同時供多個節點存取的存放磁碟區，請使用 Azure 檔案儲存體。
+由於 Azure 磁片會掛接為 ReadWriteOnce，因此只能供單一 Pod 使用。 
+
+針對可同時供多個節點存取的存放磁碟區，請使用 Azure 檔案儲存體。
 
 ```
