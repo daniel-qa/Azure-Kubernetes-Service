@@ -88,8 +88,7 @@ Pod 內的所有容器都可存取磁碟區上的資料。
 
 * Persistent Volume
 ```
-定義並建立為 Pod 生命週期一部分的磁片區只會存在，直到您刪除 Pod 為止。 
-如果 Pod 在維護事件期間 (尤其是在 StatefulSet 中) 重新排程於不同的主機上，Pod 通常會預期其儲存體能持續保存。 
+Pod 通常會預期其儲存體能持續保存。 
 永續性磁碟區 (PV) 是由 Kubernetes API 建立和管理的儲存體資源，可跨個別 Pod 的存留期持續保存。
 
 您可以使用 Azure 磁片或檔案來提供 PersistentVolume。 
