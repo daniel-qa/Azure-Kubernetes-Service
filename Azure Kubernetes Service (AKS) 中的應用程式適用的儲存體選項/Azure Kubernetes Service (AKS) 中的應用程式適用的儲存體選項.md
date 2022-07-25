@@ -157,3 +157,18 @@ PVC 會要求儲存特定 StorageClass、存取模式和大小。
 
 ![](https://github.com/daniel-qa/Azure-Kubernetes-Service/blob/main/PIC/persistent-volume-claims.png?raw=true)
 
+* 下列範例，使用 managed-premium StorageClass 並要求 5Gi 磁碟的持續性磁碟區宣告：
+
+```
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: azure-managed-disk
+spec:
+  accessModes:
+  - ReadWriteOnce
+  storageClassName: managed-premium-retain
+  resources:
+    requests:
+      storage: 5Gi
+```      
