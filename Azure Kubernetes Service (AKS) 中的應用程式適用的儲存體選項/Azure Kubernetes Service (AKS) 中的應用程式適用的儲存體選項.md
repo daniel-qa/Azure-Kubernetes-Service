@@ -26,10 +26,10 @@ Azure Blob
 ```
 使用 Azure 磁片 來建立 Kubernetes DataDisk 資源。 磁片類型包括：
 
-Ultra 磁碟
-進階 SSD
-標準 SSD
-標準 HDD
+* Ultra 磁碟
+* 進階 SSD
+* 標準 SSD
+* 標準 HDD
 
 生產與開發工作負載, 建議使用進階版 SSD。
 
