@@ -60,6 +60,15 @@ Ultra 儲存體
 ```
 區塊 Blob
 ```
+## 磁碟區類型
+```
+Kubernetes 磁片區不僅代表用來儲存和擷取資訊的傳統磁片。 
+
+Kubernetes 磁碟區也可用來將資料插入 Pod 中，供容器使用。
+
+Kubernetes 中的常見磁片區類型包括：
+```
+
 ## emptyDir
 ```
 通常用來作為 Pod 的暫存空間。 
