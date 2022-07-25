@@ -19,6 +19,6 @@ https://github.com/daniel-qa/Azure-Kubernetes-Service/new/main
 Azure 磁片、
 Azure 檔案儲存體、
 Azure NetApp Files
-Azure Blob。
+Azure Blob
 
 ```
