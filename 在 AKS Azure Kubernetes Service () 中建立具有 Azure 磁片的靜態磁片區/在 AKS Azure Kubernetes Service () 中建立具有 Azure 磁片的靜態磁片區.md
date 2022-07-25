@@ -21,10 +21,4 @@ Pod 程式常常需要存取和保存外部資料磁碟區中的資料。
 |  ----  | ----  |  ----  | ----  | ----  |
 | volumeAttributes.cachingMode	| 磁片主機快取設定	| None, ReadOnly, ReadWrite	| 否		| 預設值 |
 
-volumeAttributes.cachingMode	磁片主機快取設定	None, ReadOnly, ReadWrite	否	ReadOnly
-
-volumeHandle	Azure 磁片 URI	/subscriptions/{sub-id}/resourcegroups/{group-name}/providers/microsoft.compute/disks/{disk-id}	是	N/A
-volumeAttributes.fsType	檔案系統類型	ext4、 ext3 、 ext2 、 xfs 、 btrfs Linux、 ntfs Windows	否	ext4適用于 Linux， ntfs 適用于 Windows
-volumeAttributes.partition	Linux) 僅支援現有磁片 (的磁碟分割數目	1, 2, 3	否	空白 (沒有分割區)
-- 請確定分割區格式類似 -part1
-
+....
