@@ -154,3 +154,6 @@ PVC 會要求儲存特定 StorageClass、存取模式和大小。
 在磁碟區連線至 Pod 後，Pod 定義即會包含磁碟區掛接。
 
 ```
+
+![](https://github.com/daniel-qa/Azure-Kubernetes-Service/blob/main/PIC/persistent-volume-claims.png?raw=true)
+
