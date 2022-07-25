@@ -172,3 +172,28 @@ spec:
     requests:
       storage: 5Gi
 ```      
+
+* 當您建立 Pod 定義時，也會指定：
+
+要要求所需儲存體的永續性磁片區宣告。
+應用程式要讀取和寫入資料的 volumeMount 。
+下列範例 YAML 資訊清單說明如何使用先前的永續性磁碟區宣告在 /mnt/azure 上掛階磁碟區：
+
+```
+kind: Pod
+apiVersion: v1
+metadata:
+  name: nginx
+spec:
+  containers:
+    - name: myfrontend
+      image: mcr.microsoft.com/oss/nginx/nginx:1.15.5-alpine
+      volumeMounts:
+      - mountPath: "/mnt/azure"
+        name: volume
+  volumes:
+    - name: volume
+      persistentVolumeClaim:
+        claimName: azure-managed-disk
+        
+```        
