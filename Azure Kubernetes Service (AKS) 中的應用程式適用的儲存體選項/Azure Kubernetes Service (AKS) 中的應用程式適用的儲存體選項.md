@@ -14,7 +14,7 @@ https://github.com/daniel-qa/Azure-Kubernetes-Service/new/main
 ## 磁碟區
 ```
 
-資料磁片區可以使用：
+* 資料磁片區可以使用：
 
 Azure 磁片、
 Azure 檔案儲存體、
