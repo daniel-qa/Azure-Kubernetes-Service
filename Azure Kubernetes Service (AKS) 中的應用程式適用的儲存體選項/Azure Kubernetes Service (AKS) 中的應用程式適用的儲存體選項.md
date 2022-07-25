@@ -179,7 +179,7 @@ spec:
 
 應用程式要讀取和寫入資料的 volumeMount 。
 
-下列範例 YAML 資訊清單說明如何使用先前的永續性磁碟區宣告在 /mnt/azure 上掛階磁碟區：
+下列範例， 說明如何使用 PVC 在 /mnt/azure 上掛載磁碟區：
 
 ```
 kind: Pod
