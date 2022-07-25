@@ -94,4 +94,4 @@ Pod 通常會預期其儲存體能持續保存。
 您可以使用 Azure 磁片或檔案來提供 PersistentVolume。 
 
 ```
-![](https://github.com/daniel-qa/Azure-Kubernetes-Service/blob/main/PIC/aks-storage-options.png?raw=true)
+![]（https://github.com/daniel-qa/Azure-Kubernetes-Service/blob/main/PIC/persistent-volumes.png?raw=true）
