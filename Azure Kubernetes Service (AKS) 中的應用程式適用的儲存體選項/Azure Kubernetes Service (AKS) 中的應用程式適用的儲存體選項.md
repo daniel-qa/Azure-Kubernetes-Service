@@ -141,3 +141,16 @@ reclaimPolicy: Retain
 volumeBindingMode: WaitForFirstConsumer
 allowVolumeExpansion: true
 ```
+
+## 永續性磁碟區宣告  PVC
+
+* PersistentVolumeClaim
+
+```
+PVC 會要求儲存特定 StorageClass、存取模式和大小。 
+
+如果現有的資源無法根據定義的 StorageClass 滿足宣告，Kubernetes API 伺服器可以動態布建基礎 Azure 儲存體資源。
+
+在磁碟區連線至 Pod 後，Pod 定義即會包含磁碟區掛接。
+
+```
