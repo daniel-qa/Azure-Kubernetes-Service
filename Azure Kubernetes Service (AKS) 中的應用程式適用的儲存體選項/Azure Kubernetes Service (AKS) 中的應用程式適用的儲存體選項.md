@@ -116,14 +116,12 @@ StorageClass 也會定義 reclaimPolicy。
 基礎儲存體資源可以刪除或保留，以便與未來的 Pod 搭配使用。
 ```
 
-```
-權限  | 	原因
-managed-csi	使用 Azure StandardSSD 本地備援儲存體 (LRS) 來建立受控磁片。 回收原則可確保在使用基礎 Azure 磁碟的永久性磁碟區遭到刪除時，會刪除該磁碟。 儲存體類別也會將永續性磁片區設定為可擴充，您只需要以新的大小編輯永續性磁片區宣告。
-managed-csi-premium	使用 Azure 進階版本地備援儲存體 (LRS) 來建立受控磁片。 回收原則可確保在使用基礎 Azure 磁碟的永久性磁碟區遭到刪除時，會刪除該磁碟。 同樣地，此儲存類別允許擴充永續性磁片區。
-azurefile-csi	使用 Azure 標準儲存體來建立 Azure 檔案共用。 回收原則可確保在使用基礎 Azure 檔案共用的永久性磁碟區遭到刪除時，會刪除該檔案共用。
-azurefile-csi-premium	使用 Azure 進階版儲存體來建立 Azure 檔案共用。 回收原則可確保在使用基礎 Azure 檔案共用的永久性磁碟區遭到刪除時，會刪除該檔案共用。
-
-```
+|  權限  | 	原因 |
+|  ----  | ----  |
+| managed-csi  | ... |
+| managed-csi-premium | ... |
+| azurefile-csi | ... |
+| azurefile-csi-premium | ... |
 
 
 * 除非指定永續性磁片區的 StorageClass，否則使用預設的 StorageClass。 
