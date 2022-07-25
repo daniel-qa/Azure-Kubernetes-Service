@@ -22,3 +22,5 @@ Pod 程式常常需要存取和保存外部資料磁碟區中的資料。
 | volumeAttributes.cachingMode	| 磁片主機快取設定	| None, ReadOnly, ReadWrite	| 否		| 預設值 |
 
 ....
+
+## 建立 Azure 磁碟
