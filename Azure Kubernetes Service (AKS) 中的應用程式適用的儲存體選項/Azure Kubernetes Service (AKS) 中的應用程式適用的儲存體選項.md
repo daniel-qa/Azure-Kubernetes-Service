@@ -106,3 +106,12 @@ PersistentVolume 可由叢集管理員 靜態 建立，
 
 動態佈建會使用 StorageClass 來識別需要建立的 Azure 儲存體類型。
 ```
+
+## 儲存類別
+```
+若要定義不同層級的儲存體 (例如進階和標準)，您可以建立 StorageClass。
+
+StorageClass 也會定義 reclaimPolicy。 
+當您刪除 Pod 和永續性磁片區不再需要時，reclaimPolicy 會控制基礎 Azure 儲存體資源的行為。 
+基礎儲存體資源可以刪除或保留，以便與未來的 Pod 搭配使用。
+```
