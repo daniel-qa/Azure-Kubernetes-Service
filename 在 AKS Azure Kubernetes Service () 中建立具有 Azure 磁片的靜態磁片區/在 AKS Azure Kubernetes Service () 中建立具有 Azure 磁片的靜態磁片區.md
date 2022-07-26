@@ -47,6 +47,8 @@ MC_myResourceGroup_myAKSCluster_eastus
 
 az aks show --resource-group CoreServiceRG-Test --name MyCluster --query nodeResourceGroup -o tsv
 
+MC_CoreServiceRG-Test_MyCluster_japaneast
+
 ```
 
 
