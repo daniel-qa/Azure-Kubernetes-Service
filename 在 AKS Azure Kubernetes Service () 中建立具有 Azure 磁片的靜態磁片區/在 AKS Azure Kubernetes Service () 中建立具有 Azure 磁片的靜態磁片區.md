@@ -50,6 +50,13 @@ az aks show --resource-group CoreServiceRG-Test --name MyCluster --query Resourc
 2.使用 az disk create 命令建立 磁片。
   
   下列範例會建立 20GiB 磁片，並在建立磁片之後輸出磁片的識別碼。  
+  ```
+  az disk create \
+  --resource-group MC_myResourceGroup_myAKSCluster_eastus \
+  --name myAKSDisk \
+  --size-gb 20 \
+  --query id --output tsv
   
+  ```
   
   
