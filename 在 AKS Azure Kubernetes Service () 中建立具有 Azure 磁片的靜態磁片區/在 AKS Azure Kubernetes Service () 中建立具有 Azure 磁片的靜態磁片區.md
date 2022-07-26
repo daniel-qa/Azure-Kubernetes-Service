@@ -45,7 +45,11 @@ az aks show --resource-group myResourceGroup --name myAKSCluster --query nodeRes
 
 MC_myResourceGroup_myAKSCluster_eastus
 
+az aks show --resource-group CoreServiceRG-Test --name MyCluster --query nodeResourceGroup -o tsv
+
 ```
+
+
 
 2.使用 az disk create 命令建立 磁片。
   
