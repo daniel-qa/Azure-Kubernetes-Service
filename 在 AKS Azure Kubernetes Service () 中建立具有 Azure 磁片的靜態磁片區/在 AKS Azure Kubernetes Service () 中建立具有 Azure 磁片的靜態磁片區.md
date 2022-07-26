@@ -35,3 +35,17 @@ Pod 程式常常需要存取和保存外部資料磁碟區中的資料。
 如果在另一個資源群組中建立磁片須將角色授與叢集 Contributor Azure Kubernetes Service (AKS) 受控識別給磁片的資源群組。 
 
 此範例為會在與叢集相同的資源群組中建立磁片。
+
+1 .使用 az aks show 命令識別資源組名，並新增 --query nodeResourceGroup 參數。 
+
+  下列範例會在 myResourceGroup 資源群組名稱中，取得 AKS 叢集名稱 myAKSCluster 的節點資源群組：
+
+```
+az aks show --resource-group myResourceGroup --name myAKSCluster --query nodeResourceGroup -o tsv
+
+az aks show --resource-group CoreServiceRG-Test --name MyCluster --query ResourceGroup -o tsv
+
+```
+  
+  
+  
