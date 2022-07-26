@@ -67,7 +67,7 @@ MC_CoreServiceRG-Test_MyCluster_japaneast
   
   ```
   az disk create \
-  --MC_CoreServiceRG-Test_MyCluster_japaneast \
+  --resource-group MC_CoreServiceRG-Test_MyCluster_japaneast \
   --name myAKSDisk \
   --size-gb 20 \
   --query id --output tsv
