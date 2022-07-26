@@ -105,7 +105,4 @@ spec:
     volumeHandle: /subscriptions/<subscriptionID>/resourceGroups/MC_myAKSCluster_myAKSCluster_eastus/providers/Microsoft.Compute/disks/myAKSDisk
     volumeAttributes:
       fsType: ext4
-
-
-
 ```
