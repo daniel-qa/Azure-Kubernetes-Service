@@ -19,7 +19,7 @@ Pod 程式常常需要存取和保存外部資料磁碟區中的資料。
 | 名稱	| 意義	| 可用值	| 強制性	| 預設值 |
 |  ----  | ----  |  ----  | ----  | ----  |
 | volumeAttributes.cachingMode	| 磁片主機快取設定	| None, ReadOnly, ReadWrite	| 否		| 預設值 |
-
+| volumeHandle | Azure 磁片 URI | /subscriptions/{sub-id}/resourcegroups/{group-name}/providers/microsoft.compute/disks/{disk-id} | 是 | N/A |
 ....
 
 ## 建立 Azure 磁碟
