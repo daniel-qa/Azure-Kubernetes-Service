@@ -43,7 +43,7 @@ Pod 程式常常需要存取和保存外部資料磁碟區中的資料。
 ```
 az aks show --resource-group myResourceGroup --name myAKSCluster --query nodeResourceGroup -o tsv
 
-az aks show --resource-group CoreServiceRG-Test --name MyCluster --query ResourceGroup -o tsv
+MC_myResourceGroup_myAKSCluster_eastus
 
 ```
 
