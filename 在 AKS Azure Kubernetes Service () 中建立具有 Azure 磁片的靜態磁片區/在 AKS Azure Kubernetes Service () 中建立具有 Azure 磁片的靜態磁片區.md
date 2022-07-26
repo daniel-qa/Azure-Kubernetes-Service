@@ -74,3 +74,10 @@ MC_CoreServiceRG-Test_MyCluster_japaneast
   
   ```
   
+當命令成功完成之後，磁碟資源識別碼就會隨即顯示，如下列輸出範例所示。 下一節會使用此磁片識別碼來掛接磁片。
+
+```
+/subscriptions/<subscriptionID>/resourceGroups/MC_myAKSCluster_myAKSCluster_eastus/providers/Microsoft.Compute/disks/myAKSDisk
+
+```
+
