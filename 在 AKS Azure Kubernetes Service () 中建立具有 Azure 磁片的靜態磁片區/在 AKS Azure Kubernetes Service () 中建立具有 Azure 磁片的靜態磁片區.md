@@ -16,6 +16,8 @@ Pod 程式常常需要存取和保存外部資料磁碟區中的資料。
  
 ## 儲存體類別靜態布建
 
+* 下表描述 Azure 磁片 CSI 驅動程式靜態布建的 儲存體 類別參數：
+
 | 名稱	| 意義	| 可用值	| 強制性	| 預設值 |
 |  ----  | ----  |  ----  | ----  | ----  |
 | volumeHandle | Azure 磁片 URI | /subscriptions/{sub-id}/resourcegroups/{group-name}/providers/microsoft.compute/disks/{disk-id} | 是 | N/A |
