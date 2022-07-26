@@ -66,7 +66,7 @@ MC_CoreServiceRG-Test_MyCluster_japaneast
   ```
   
   ```
-   az disk create \
+  az disk create \
   --MC_CoreServiceRG-Test_MyCluster_japaneast \
   --name myAKSDisk \
   --size-gb 20 \
