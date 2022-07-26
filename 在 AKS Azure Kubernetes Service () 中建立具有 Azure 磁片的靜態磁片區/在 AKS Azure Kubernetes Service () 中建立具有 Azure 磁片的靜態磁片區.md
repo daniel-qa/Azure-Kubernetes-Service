@@ -79,5 +79,7 @@ MC_CoreServiceRG-Test_MyCluster_japaneast
 ```
 /subscriptions/<subscriptionID>/resourceGroups/MC_myAKSCluster_myAKSCluster_eastus/providers/Microsoft.Compute/disks/myAKSDisk
 
+/subscriptions/<subscriptionID>/resourceGroups/MC_CoreServiceRG-Test_MyCluster_japaneast/providers/Microsoft.Compute/disks/myAKSDisk
+
 ```
 
