@@ -83,3 +83,29 @@ MC_CoreServiceRG-Test_MyCluster_japaneast
 
 ```
 
+## 將磁片掛接為磁片區
+
+使用PersistentVolume建立pv-azuredisk.yaml檔案。 使用上一個步驟中的磁片資源識別碼進行更新 volumeHandle 。 例如
+
+```
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-azuredisk
+spec:
+  capacity:
+    storage: 20Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: managed-csi
+  csi:
+    driver: disk.csi.azure.com
+    readOnly: false
+    volumeHandle: /subscriptions/<subscriptionID>/resourceGroups/MC_myAKSCluster_myAKSCluster_eastus/providers/Microsoft.Compute/disks/myAKSDisk
+    volumeAttributes:
+      fsType: ext4
+
+
+
+```
