@@ -26,5 +26,12 @@ Pod 程式常常需要存取和保存外部資料磁碟區中的資料。
 | volumeAttributes.cachingMode	| 磁片主機快取設定	| None, ReadOnly, ReadWrite	| 否		| 預設值 |
 
 
-
 ## 建立 Azure 磁碟
+
+建立與 AKS 搭配使用的 Azure 磁碟時，可以在節點資源群組中建立磁碟資源。 
+
+此方法可讓 AKS 叢集存取和管理磁碟資源。 
+
+如果在另一個資源群組中建立磁片須將角色授與叢集 Contributor Azure Kubernetes Service (AKS) 受控識別給磁片的資源群組。 
+
+此範例為會在與叢集相同的資源群組中建立磁片。
