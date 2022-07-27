@@ -4,9 +4,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ubuntu-deployment
-  labels:
-    app: ubuntu
+  name: ubuntu
 spec:
   replicas: 1
   selector:
@@ -19,9 +17,28 @@ spec:
     spec:
       containers:
       - name: ubuntu
-        image: ubuntu
+        image: myclusterregistry.azurecr.io/ubuntu:latest
         command: ["sleep", "123456"]
+        ports:
+        - containerPort: 22
+        resources:
+          requests:
+            cpu: 250m
+          limits:
+            cpu: 500m
       nodeSelector:
-        beta.kubernetes.io/os: linux
+        kubernetes.io/os: linux
+        
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ubuntu-svc
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 22
+  selector:
+    app: ubuntu
         
 ```       
