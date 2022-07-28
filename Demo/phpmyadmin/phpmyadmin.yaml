@@ -22,15 +22,14 @@ spec:
             cpu: 250m
           limits:
             cpu: 500m
-#        env:
-#        - name: DATABASE_HOST
-#          value: "mydbrd.mysql.database.azure.com" #Update here
-#        - name: DATABASE_USERNAME
-#          value: "daniel"  #Update here
-#        - name: DATABASE_PASSWORD
-#          value: "Ha80650390"  #Update here
-#        - name: DATABASE_NAME
-#          value: "wpdb"
+            
+        env:
+        - name: PMA_HOST
+          value: mysql-svc
+        - name: PMA_PORT
+          value: "3306"
+        - name: MYSQL_ROOT_PASSWORD	
+          value: "root"       
 
 ---
 apiVersion: v1
