@@ -23,3 +23,21 @@ az acr build --image azure-vote-front:v1 --registry myclusterregistry --file Doc
 ```
 helm create azure-vote-front
 ```
+
+* 更新 azure-vote-front/Chart.yaml 以從圖表存放庫新增 redis 圖表的 https://charts.bitnami.com/bitnami 相依性，並更新 appVersion 為 v1 。 
+例如：
+```
+apiVersion: v2
+name: azure-vote-front
+description: A Helm chart for Kubernetes
+
+dependencies:
+  - name: redis
+    version: 14.7.1
+    repository: https://charts.bitnami.com/bitnami
+
+...
+# This is the version number of the application being deployed. This version number should be
+# incremented each time you make changes to the application.
+appVersion: v1
+```
