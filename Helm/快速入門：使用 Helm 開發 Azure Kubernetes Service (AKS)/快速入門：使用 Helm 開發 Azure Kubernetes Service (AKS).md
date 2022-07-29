@@ -53,3 +53,30 @@ helm dependency update azure-vote-front
 * 將 image.tag 變更為 v1 。
 * 將 service.type 變更為 LoadBalancer。
 ```
+* 例如：
+```
+# Default values for azure-vote-front.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+backendName: azure-vote-backend-master
+redis:
+  image:
+    registry: mcr.microsoft.com
+    repository: oss/bitnami/redis
+    tag: 6.0.8
+  fullnameOverride: azure-vote-backend
+  auth:
+    enabled: false
+
+image:
+  repository: myhelmacr.azurecr.io/azure-vote-front
+  pullPolicy: IfNotPresent
+  tag: "v1"
+...
+service:
+  type: LoadBalancer
+  port: 80
+...
+```
