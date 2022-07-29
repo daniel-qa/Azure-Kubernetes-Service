@@ -8,6 +8,6 @@ https://helm.sh/docs/intro/quickstart/
 1.一個 Kubernetes 集群
 2.決定將哪些安全配置應用於您的安裝（如果有）
 3.安裝和配置 Helm。
-4. 安裝 kubectl 指令套件
+4.本地安裝 kubectl 指令套件
 
 ```
