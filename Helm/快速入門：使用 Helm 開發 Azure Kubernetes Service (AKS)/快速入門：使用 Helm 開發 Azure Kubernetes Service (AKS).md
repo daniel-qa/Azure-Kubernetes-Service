@@ -41,3 +41,7 @@ dependencies:
 # incremented each time you make changes to the application.
 appVersion: v1
 ```
+* 使用 helm dependency update 更新 helm 圖表相依性：
+```
+helm dependency update azure-vote-front
+```
