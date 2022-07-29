@@ -45,3 +45,11 @@ appVersion: v1
 ```
 helm dependency update azure-vote-front
 ```
+* 更新 azure-vote-front/values.yaml：
+```
+* 新增 redis 區 段以設定映射詳細資料、容器埠和部署名稱。
+* 新增 backendName ，以將前端部分連線到 redis 部署。
+* 將 image.repository 變更為 <loginServer>/azure-vote-front 。
+* 將 image.tag 變更為 v1 。
+* 將 service.type 變更為 LoadBalancer。
+```
