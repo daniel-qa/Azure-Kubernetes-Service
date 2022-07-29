@@ -9,3 +9,9 @@ https://docs.microsoft.com/zh-tw/azure/aks/quickstart-helm?tabs=azure-cli
 git clone https://github.com/Azure-Samples/azure-voting-app-redis.git
 cd azure-voting-app-redis/azure-vote/
 ```
+## 建置範例應用程式並將其推送至 ACR
+
+使用上述 Dockerfile，執行 az acr build 命令來建置映射，並將映射推送至登錄。 
+```
+az acr build --image azure-vote-front:v1 --registry MyHelmACR --file Dockerfile .
+```
