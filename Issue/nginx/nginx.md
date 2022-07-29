@@ -1,10 +1,8 @@
 https://kubernetes.io/zh-cn/docs/tasks/run-application/run-stateless-application-deployment/
 
 ## Build
-
 ```
-
-docker build -t vieux/apache:2.0 .
+docker build -t myclusterregistry.azurecr.io/nginx_v1 .
 ```
 
 * Dockerfile
