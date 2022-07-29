@@ -11,3 +11,8 @@ https://helm.sh/docs/intro/quickstart/
 4.本地安裝 kubectl 指令套件
 
 ```
+
+## 安裝 Helm
+```
+[安裝指南](https://helm.sh/docs/intro/install/)
+```
