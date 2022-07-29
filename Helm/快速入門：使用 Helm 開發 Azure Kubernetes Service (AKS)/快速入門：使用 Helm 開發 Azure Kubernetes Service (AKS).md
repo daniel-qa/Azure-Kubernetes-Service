@@ -17,3 +17,9 @@ az acr build --image azure-vote-front:v1 --registry MyHelmACR --file Dockerfile 
 
 az acr build --image azure-vote-front:v1 --registry myclusterregistry --file Dockerfile .
 ```
+
+## 建立您的 Helm 圖表
+使用 helm create 命令產生 Helm 圖表。
+```
+helm create azure-vote-front
+```
