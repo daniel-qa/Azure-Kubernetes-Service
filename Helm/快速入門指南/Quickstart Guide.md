@@ -15,6 +15,6 @@ https://helm.sh/docs/intro/quickstart/
 ## 安裝 Helm
 
 ```
-[安裝指南](https://helm.sh/docs/intro/install/)
+[安裝指南](https://helm.sh/docs/intro/install/](https://helm.sh/docs/intro/install/)
 
 ```
