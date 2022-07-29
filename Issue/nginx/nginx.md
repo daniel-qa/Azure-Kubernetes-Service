@@ -2,7 +2,7 @@ https://kubernetes.io/zh-cn/docs/tasks/run-application/run-stateless-application
 
 ## Build
 ```
-docker build -t myclusterregistry.azurecr.io/nginx_v1 .
+docker build -t myclusterregistry.azurecr.io/nginx:v1 .
 ```
 
 * Dockerfile
