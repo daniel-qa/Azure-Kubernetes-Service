@@ -80,3 +80,18 @@ service:
   port: 80
 ...
 ```
+
+* 將區 env 段新增至 azure-vote-front/templates/deployment.yaml ，以傳遞 redis 部署的名稱。
+```
+...
+      containers:
+        - name: {{ .Chart.Name }}
+          securityContext:
+            {{- toYaml .Values.securityContext | nindent 12 }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          env:
+          - name: REDIS
+            value: {{ .Values.backendName }}
+...
+```
