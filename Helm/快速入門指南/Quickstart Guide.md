@@ -1,3 +1,5 @@
+https://helm.sh/docs/intro/quickstart/
+
 # 快速入門指南
 
 ## 先決條件
