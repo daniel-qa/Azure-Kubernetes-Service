@@ -74,5 +74,10 @@ spec:
         ports:
 
         - containerPort: 80
+        env: 
+          - name: PHP_UPSTREAM_CONTAINER
+            value: "php-fpm"
+          - name: PHP_UPSTREAM_PORT
+            value: "9000"
 
 ```
