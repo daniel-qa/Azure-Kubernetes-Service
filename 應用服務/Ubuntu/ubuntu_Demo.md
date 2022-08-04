@@ -1,5 +1,3 @@
-
-
 ```
 apiVersion: apps/v1
 kind: Deployment
@@ -17,7 +15,7 @@ spec:
     spec:
       containers:
       - name: ubuntu
-        image: myclusterregistry.azurecr.io/ubuntu:latest
+        image: ubuntu
         command: ["sleep", "123456"]
         ports:
         - containerPort: 22
@@ -26,10 +24,22 @@ spec:
             cpu: 250m
           limits:
             cpu: 500m
+        volumeMounts:
+          - name: azure
+            mountPath: /mnt/azure
+          - name: nginx
+            mountPath: /opt/nginx-conf
+      volumes:
+        - name: azure
+          persistentVolumeClaim:
+            claimName: azurefile
+        - name: nginx
+          persistentVolumeClaim:
+            claimName: nginx-conf        
       nodeSelector:
         kubernetes.io/os: linux
         
----
+#---
 apiVersion: v1
 kind: Service
 metadata:
@@ -40,5 +50,4 @@ spec:
     - port: 22
   selector:
     app: ubuntu
-        
-```       
+```
