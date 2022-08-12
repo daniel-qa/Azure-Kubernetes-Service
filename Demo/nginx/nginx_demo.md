@@ -21,7 +21,8 @@ spec:
       - name: nginx
         image: myclusterregistry.azurecr.io/nginx:v1
         ports:
-        - containerPort: 80        
+	- name: web80
+          containerPort: 80        
         # - containerPort: 443
         env: 
           - name: PHP_UPSTREAM_CONTAINER
@@ -36,7 +37,8 @@ metadata:
 spec:
   type: LoadBalancer
   ports:
-  - port: 80
+  - name: web80
+    port: 80
   selector:
     app: nginx
 ```
