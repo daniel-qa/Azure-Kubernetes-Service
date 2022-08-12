@@ -1,4 +1,3 @@
-```
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -18,7 +17,10 @@ spec:
         image: ubuntu
         command: ["sleep", "123456"]
         ports:
-        - containerPort: 22
+        - name: ssh22
+          containerPort: 22
+        - name: web80
+          containerPort: 80
         resources:
           requests:
             cpu: 250m
@@ -26,16 +28,12 @@ spec:
             cpu: 500m
         volumeMounts:
           - name: azure
-            mountPath: /mnt/azure
-          - name: nginx
-            mountPath: /opt/nginx-conf
+            mountPath: /opt
       volumes:
         - name: azure
           persistentVolumeClaim:
-            claimName: azurefile
-        - name: nginx
-          persistentVolumeClaim:
-            claimName: nginx-conf        
+            claimName: my-azurefile
+        
       nodeSelector:
         kubernetes.io/os: linux
         
@@ -47,7 +45,9 @@ metadata:
 spec:
   type: LoadBalancer
   ports:
-    - port: 22
+    - name: ssh22
+      port: 22
+    - name: web80
+      port: 80
   selector:
     app: ubuntu
-```
