@@ -38,7 +38,7 @@ spec:
       nodeSelector:
         kubernetes.io/os: linux
         
-#---
+---
 apiVersion: v1
 kind: Service
 metadata:
