@@ -12,7 +12,7 @@ spec:
   csi:
     driver: file.csi.azure.com
     readOnly: false
-    volumeHandle: unique-volumeid  # make sure this volumeid is unique in the cluster
+    volumeHandle: unique-volumeid-azurefile  # make sure this volumeid is unique in the cluster
     volumeAttributes:
       resourceGroup: CoreServiceRG-Test  # optional, only set this when storage account is not in the same resource group as agent node
       shareName: myshare
