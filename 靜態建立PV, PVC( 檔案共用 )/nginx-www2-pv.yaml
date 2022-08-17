@@ -1,0 +1,30 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: nginx-www2
+spec:
+  capacity:
+    storage: 20Gi
+  accessModes:
+    - ReadWriteMany
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: webfile
+  csi:
+    driver: file.csi.azure.com
+    readOnly: false
+    volumeHandle: unique-volumeid-nginx-www2  # make sure this volumeid is unique in the cluster
+    volumeAttributes:
+      resourceGroup: CoreServiceRG-Test  # optional, only set this when storage account is not in the same resource group as agent node
+      shareName: nginx-www2
+    nodeStageSecretRef:
+      name: azure-secret
+      namespace: default
+  mountOptions:
+    - dir_mode=0777
+    - file_mode=0777
+    - uid=1000
+    - gid=1000
+    - mfsymlinks
+    - cache=none
+    - nosharesock
+    - nobrl
