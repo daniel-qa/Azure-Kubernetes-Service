@@ -49,6 +49,10 @@ FROM nginx:latest
 
 COPY nginx.conf /etc/nginx
 
+# For devlop
+# RUN apt-get update -y && apt-get install nano -y && apt-get install procps -y
+
+
 RUN apt-get update && apt-get -y install logrotate \
 		&& apt-get install openssl \
 		&& apt-get install bash	
