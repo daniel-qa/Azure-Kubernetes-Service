@@ -11,7 +11,8 @@ https://github.com/MicrosoftDocs/azure-docs.zh-tw/blob/master/articles/aks/opera
 * 磁碟區的動態佈建和靜態佈建之間的差異
 * 備份並保護資料磁碟區的方法
 
-## 最佳做法指引 
+## 選擇適當的儲存體類型
+**最佳做法指引** 
 
 了解應用程式的需求以挑選正確的儲存體。 針對生產工作負載使用高效能、以 SSD 備份的儲存體。 在有多個並行連線之需求的情況下，針對網路型儲存體進行規劃。
 
@@ -23,3 +24,6 @@ https://github.com/MicrosoftDocs/azure-docs.zh-tw/blob/master/articles/aks/opera
 
 
 ```
+
+
+* 不同的 VM 大小在本機和附加磁碟 IOPS (每秒輸入/輸出作業) 上限上，也具有儲存體效能上的差異。
